@@ -1,6 +1,5 @@
-<?php // $Id: comment.tpl.php,v 1.1.4.1 2009/02/03 02:50:21 ipwa Exp $ ?>
 <li>
-  <cite><?php print $author; ?></cite> on <?php print format_date($comment->timestamp); ?>
+  <cite><?php print $author; ?></cite> <?php print t('on') . ' ' . format_date($comment->timestamp); ?>
   <div class="commenttext">
     <?php print $content; ?>
   </div>
