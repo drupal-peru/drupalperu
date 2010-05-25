@@ -8,3 +8,10 @@ function drupal_peru_preprocess_block(&$variables) {
   $attributes = array('title' => t('edit the content of this block'), 'class' => 'block-edit');
   $variables['edit_link'] = l(t('edit block'), $edit_path, array('attributes' => $attributes, 'query' => drupal_get_destination(), 'html' => TRUE));
 }
+
+/**
+ * Implementation of theme_preprocess_page().
+ */
+function drupal_peru_preprocess_page(&$variables) {
+  $variables['logo'] = url(drupal_get_path('theme', 'drupal_peru') . '/images/logo.png');
+}
