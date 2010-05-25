@@ -13,7 +13,7 @@
 <div id="wrapper"> <!--width independent from body-->
 
 
-  <div id="header">
+  <div id="header"><div id="header-inner">
 
     <div id="navigation">
       <?php if (isset($primary_links)) : ?>
@@ -34,17 +34,25 @@
     <?php endif; ?>
 
     <?php if ($site_name): ?>
-      <h1 id="site-name">
-        <a href="<?php print $base_path; ?>" title="<?php print t('Home'); ?>" rel="home">
-          <?php print $site_name; ?>
-        </a>
-      </h1>
+      <?php if ($title): ?>
+        <div id="site-name"><strong>
+          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+            <?php print $site_name; ?>
+          </a>
+        </strong></div>
+      <?php else: ?>
+        <h1 id="site-name">
+          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+            <?php print $site_name; ?>
+          </a>
+        </h1>
+      <?php endif; ?>
     <?php endif; ?>
 
     <?php if ($site_slogan): ?>
-      <h2 id="slogan">
+      <div id="slogan">
         <?php print $site_slogan; ?>
-      </h2>
+      </div>
     <?php endif; ?>
 
     <?php if ($search_box): ?>
@@ -55,7 +63,7 @@
       <?php print $header ?>
     <?php endif; ?>
 
-  </div> <!-- end header -->
+  </div></div><!--/header-inner /header-->
 
   <div id="main">
 

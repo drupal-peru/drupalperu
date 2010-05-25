@@ -135,6 +135,16 @@ ul.links {
   padding: 15px 0 0;
   background: url(images/main-shadow.png) repeat-y;
 }
+#header-inner {
+  background: url(images/header.png) repeat-x top center;
+  height: 238px;
+  margin: 0 20px;
+}
+
+#logo {
+  float: left;
+  padding: 0 30px;
+}
 
 /**
  * Blocks
@@ -210,11 +220,23 @@ ul.primary-links {
  * Headers
  */
 
-h1#site-name a {
+#site-name a {
+  display: block;
   font-family: "Century Gothic", Helvetica, "Bitstream Vera Sans", sans-serif;
-  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
   font-weight: bold;
-  color: #333;
+  color: #FFF;
+}
+div#site-name a {
+  font-size: 7em;
+  line-height: 0.6em;
+  padding-top: 0.49em;
+}
+h1#site-name a {
+  font-size: 3.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.21em;
 }
 
 h1.title {
@@ -231,19 +253,13 @@ h1, h2, h3 {
   font-family: "Century Gothic", Helvetica, "Bitstream Vera Sans", sans-serif;
 }
 
-h1#site-name a {
-  padding: 0 20px;
-  display: block;
-  width: 899px;
-  height: 221px;
-  text-align: center;
-  background: url(images/logo.png) no-repeat top center;
-  text-indent: -9999px;
-}
-
-h2#slogan {
-  color: #99cc33;
+#slogan {
+  color: #FFF;
   margin: 27px 0 0 5px;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 h2.teaser-title {
