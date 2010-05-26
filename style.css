@@ -632,3 +632,20 @@ tfoot th em {
   font-size: 1.1em;
   font-style: normal;
 }
+
+/**
+ * Frontpage
+ */
+
+.frontpage-portadab-item {
+  width: 280px;
+}
+.frontpage-portadab-inner {
+  padding: 10px;
+}
+.view-frontpage.view-id-frontpage.view-display-id-block_1.view-dom-id-2 h2.title {
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: bold;
+  text-transform:uppercase;
+}
