@@ -1,7 +1,7 @@
-<div id="block-<?php print $block->module .'-'. $block->delta; ?>" class="block <?php print $block_classes; ?>">
+<div id="block-<?php print $block->module .'-'. $block->delta; ?>" class="block"><div class="block-inner">
 
   <?php if ($block->subject): ?>
-    <h2><?php print $block->subject ?></h2>
+    <h2 class="title"><?php print $block->subject ?></h2>
   <?php endif;?>
 
   <div class="content">
@@ -12,4 +12,4 @@
     <div class="edit"><?php print $edit_link; ?></div>
   <?php endif; ?>
 
-</div>
+</div></div>
