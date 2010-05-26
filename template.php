@@ -15,3 +15,13 @@ function drupal_peru_preprocess_block(&$variables) {
 function drupal_peru_preprocess_page(&$variables) {
   $variables['logo'] = url(drupal_get_path('theme', 'drupal_peru') . '/images/logo.png');
 }
+
+/**
+ * Implementation of theme_imagefield_image().
+ */
+function drupal_peru_imagefield_image($file, $alt = '', $title = '', $attributes = NULL, $getsize = TRUE) {
+  if (isset($file['source']) && $file['source'] == 'default_image_upload') {
+    return '';
+  }
+  return theme_imagefield_image($file, $alt, $title, $attributes, $getsize);
+}
