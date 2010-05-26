@@ -57,7 +57,6 @@ input.form-text {
 }
 
 ul.links {
-  margin: .3em 0;
 }
 
 .block ul {
@@ -119,7 +118,7 @@ ul.links {
   clear: both;
   overflow: auto;
   margin: 0 auto;
-  padding: 20px 20px;
+  padding: 0 20px;
   background: url(images/main-shadow.png) repeat-y;
 }
 
@@ -133,9 +132,11 @@ ul.links {
   margin: 0 auto;
   width: 940px;
   padding: 15px 0 0;
-  background: url(images/main-shadow.png) repeat-y;
 }
 #header-inner {
+  background: url(images/main-shadow.png) repeat-y;
+}
+#header-inner-wrapper {
   background: url(images/header.png) repeat-x top center;
   height: 238px;
   margin: 0 20px;
@@ -188,11 +189,23 @@ div.block {
 #navigation {
   text-align: center;
   font-size: 130%;
+  background: transparent url(images/navigation-shadow.png) no-repeat scroll 0 0;
+  padding-top: 15px;
+  height: 22px;
+}
+#navigation-inner {
+  background: transparent url(images/navigation.png) repeat-x scroll 0 0;
+  margin: 0 20px;
+  -moz-border-radius-topleft: 25px;
+  -webkit-border-top-left-radius: 25px;
+  border-top-left-radius: 25px;
+  -moz-border-radius-topright: 25px;
+  -webkit-border-top-right-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 ul.primary-links {
-  margin: 15px 50px 0;
-  padding: 5px;
+  padding: 2px;
 }
 
 #navigation li {
@@ -202,9 +215,12 @@ ul.primary-links {
 #navigation a {
   margin: 0px;
   padding: 0 10px;
-  color: #000;
-  border-right: 1px solid #669933;
+  color: #FFF;
+  border-right: 1px solid #FFF;
   font-family: "Century Gothic", Helvetica, "Bitstream Vera Sans", sans-serif;
+  font-weight:bold;
+  font-size: 0.8em;
+  text-transform: uppercase;
 }
 #navigation a:hover {
   text-decoration:underline;
@@ -227,16 +243,17 @@ ul.primary-links {
   text-align: center;
   font-weight: bold;
   color: #FFF;
+  padding-top: 89px;
+  padding-bottom: 16px;
 }
 div#site-name a {
-  font-size: 7em;
-  line-height: 0.6em;
-  padding-top: 0.49em;
+  font-size: 6em;
 }
 h1#site-name a {
-  font-size: 3.5em;
-  padding-top: 0.5em;
-  padding-bottom: 0.21em;
+  font-size: 3em;
+}
+h1#site-name {
+  margin:0;
 }
 
 h1.title {
