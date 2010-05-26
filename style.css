@@ -121,12 +121,22 @@ ul.links {
   background: url(images/main-shadow.png) repeat-y;
 }
 
+#logo {
+  float: left;
+  padding: 0 30px;
+}
+
 #header {
   overflow: hidden;
   margin: 0 auto;
   width: 940px;
   padding: 15px 0 0;
 }
+
+/**
+ * Header region
+ */
+
 #header-inner-wrapper {
   background: url(images/main-shadow.png) repeat-y;
 }
@@ -134,15 +144,53 @@ ul.links {
   background: url(images/header.png) repeat-x top center;
   height: 238px;
 }
-#header-region {
-}
 .header-content {
   margin: 0 20px;
 }
 
-#logo {
+#header-region .block {
+  width: 300px;
   float: left;
-  padding: 0 30px;
+}
+#header-region .block-inner {
+  padding: 10px;
+}
+
+#header-region .block-inner .title {
+  color: #FFF;
+  font-size: 1.2em;
+  font-weight: bold;
+  height: 63px;
+  padding: 25px 0 0 70px;
+  text-align: center;
+  text-shadow: 2px 2px 2px #002E45;
+  margin: 0;
+}
+#header-region .block-inner .content p {
+  margin: 0;
+}
+#header-region .block-inner .content {
+  border: 1px solid #BFBFBF;
+  border-top: none;
+  padding: 15px 10px 10px 10px;
+  margin-top: -13px;
+}
+
+.handy-link {
+  display:block;
+  margin: 15px 0 10px 0;
+  padding: 5px 0;
+  background: transparent url(images/handy-link.png) repeat-x scroll 0 0;
+  -moz-border-radius:17px;
+  -webkit-border-radius: 17px;
+  border-radius: 17px;
+  -moz-box-shadow:0 0 9px #6E6E6E;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: center;
+  text-shadow: 2px 2px 2px #9D3107;
+  text-transform: uppercase;
 }
 
 /**
@@ -150,8 +198,17 @@ ul.links {
  */
 
 div.block {
-  padding: 10px;
   margin-top: 15px;
+}
+
+#block-block-1 .title {
+  background: transparent url(images/header-block-newbies.png) no-repeat scroll 0 0;
+}
+#block-block-2 .title {
+  background: transparent url(images/header-block-ninjas.png) no-repeat scroll 0 0;
+}
+#block-block-3 .title {
+  background: transparent url(images/header-block-employer.png) no-repeat scroll 0 0;
 }
 
 /**

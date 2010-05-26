@@ -66,7 +66,7 @@
       </div><!--/header-inner-->
 
       <?php if ($header): ?>
-        <div id="header-region" class="header-content">
+        <div id="header-region" class="header-content clear-block">
           <?php print $header ?>
         </div>
       <?php endif; ?>
