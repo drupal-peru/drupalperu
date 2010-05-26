@@ -95,22 +95,21 @@ ul.links {
  *  Layout
  */
 
-#main #sidebar-left {
+#sidebar-left {
   width: 200px;
   float: left;
 }
 
-#main #main-content {
+#main-content {
   color: #444;
   background-color: #fff;
   float: left;
-  width: 570px;
-  margin: 20px 0 0 20px;
-  padding: 10px 20px;
+  width: 660px;
+  margin: 0 20px;
 }
 
-.no-sidebars #main #main-content {
-  width: 770px;
+.no-sidebars #main-content {
+  width: 840px;
 }
 
 #main {
@@ -120,11 +119,6 @@ ul.links {
   margin: 0 auto;
   padding: 0 20px;
   background: url(images/main-shadow.png) repeat-y;
-}
-
-#main #sidebar-right {
-  width: 200px;
-  float: right;
 }
 
 #header {
