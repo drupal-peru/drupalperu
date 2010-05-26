@@ -16,7 +16,7 @@ body {
   padding: 0px;
   padding: 7px 0 0 0;
   */
-  font-family: Tahoma, Verdana, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+  font-family: Verdana, Geneva, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
   /* Use a 12px base font size with a 16px line height */
   font-size: 0.75em; /* 16px x .75 = 12px */
   line-height: 1.333em; /* 12px x 1.333 = 16px */
@@ -28,13 +28,20 @@ body {
  */
 
 a {
-  color: #99cc66;
+  color: #a94700;
   text-decoration: none;
   outline: none;
 }
-
-a.visited {
-  color: #99cc66;
+a:link {
+}
+a:visited {
+}
+a:hover, a:focus {
+  color: #5c2300;
+}
+a:active, a.active {
+  font-weight: bold;
+  color: #FFF
 }
 
 img {
@@ -246,7 +253,8 @@ div.block {
   font-size: 130%;
   background: transparent url(images/navigation-shadow.png) no-repeat scroll 0 0;
   padding-top: 15px;
-  height: 22px;
+  height: 21px;
+  font-family: "Century Gothic", Helvetica, "Bitstream Vera Sans", sans-serif;
 }
 #navigation-inner {
   background: transparent url(images/navigation.png) repeat-x scroll 0 0;
@@ -269,18 +277,18 @@ ul.primary-links {
 #navigation a {
   margin: 0px;
   padding: 0 10px;
-  color: #FFF;
   border-right: 1px solid #FFF;
-  font-family: "Century Gothic", Helvetica, "Bitstream Vera Sans", sans-serif;
-  font-weight:bold;
+  font-weight: bold;
   font-size: 0.8em;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #FFF;
 }
-#navigation a:hover {
+#navigation a:hover, #navigation a:focus {
   text-decoration:underline;
 }
-#navigation a.active {
-  font-weight:bold;
+#navigation a.active, #navigation a:active {
+  color: #000;
 }
 #navigation li.last a {
   border-right:none;
