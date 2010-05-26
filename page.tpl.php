@@ -15,7 +15,7 @@
 
   <div id="header">
 
-    <div id="navigation"><div id="navigation-inner">
+    <div id="navigation"><div id="navigation-inner" class="header-content">
       <?php if (isset($primary_links)) : ?>
         <?php print theme('links', $primary_links, array('class' => 'links primary-links')) ?>
       <?php endif; ?>
@@ -25,47 +25,53 @@
       <?php endif; ?>
     </div></div>
 
-    <div id="header-inner"><div id="header-inner-wrapper">
+    <div id="header-inner-wrapper">
 
-      <?php if ($logo): ?>
-        <div id="logo">
-          <a href="<?php print $base_path; ?>" title="<?php print t('Home'); ?>" rel="home">
-            <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" id="logo-image" />
-          </a>
-        </div>
-      <?php endif; ?>
+      <div id="header-inner" class="header-content">
 
-      <?php if ($site_name): ?>
-        <?php if ($title): ?>
-          <div id="site-name"><strong>
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
-              <?php print $site_name; ?>
+        <?php if ($logo): ?>
+          <div id="logo">
+            <a href="<?php print $base_path; ?>" title="<?php print t('Home'); ?>" rel="home">
+              <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" id="logo-image" />
             </a>
-          </strong></div>
-        <?php else: ?>
-          <h1 id="site-name">
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
-              <?php print $site_name; ?>
-            </a>
-          </h1>
+          </div>
         <?php endif; ?>
-      <?php endif; ?>
 
-      <?php if ($site_slogan): ?>
-        <div id="slogan">
-          <?php print $site_slogan; ?>
-        </div>
-      <?php endif; ?>
+        <?php if ($site_name): ?>
+          <?php if ($title): ?>
+            <div id="site-name"><strong>
+              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+                <?php print $site_name; ?>
+              </a>
+            </strong></div>
+          <?php else: ?>
+            <h1 id="site-name">
+              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+                <?php print $site_name; ?>
+              </a>
+            </h1>
+          <?php endif; ?>
+        <?php endif; ?>
 
-      <?php if ($search_box): ?>
-        <?php print $search_box ?>
-      <?php endif; ?>
+        <?php if ($site_slogan): ?>
+          <div id="slogan">
+            <?php print $site_slogan; ?>
+          </div>
+        <?php endif; ?>
+
+        <?php if ($search_box): ?>
+          <?php print $search_box ?>
+        <?php endif; ?>
+
+      </div><!--/header-inner-->
 
       <?php if ($header): ?>
-        <?php print $header ?>
+        <div id="header-region" class="header-content">
+          <?php print $header ?>
+        </div>
       <?php endif; ?>
 
-    </div></div><!--/header-inner--><!--/header-inner-wrapper-->
+    </div><!--/header-inner-wrapper-->
   </div><!--/header-->
 
   <div id="main">

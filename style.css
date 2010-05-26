@@ -127,12 +127,16 @@ ul.links {
   width: 940px;
   padding: 15px 0 0;
 }
-#header-inner {
+#header-inner-wrapper {
   background: url(images/main-shadow.png) repeat-y;
 }
-#header-inner-wrapper {
+#header-inner {
   background: url(images/header.png) repeat-x top center;
   height: 238px;
+}
+#header-region {
+}
+.header-content {
   margin: 0 20px;
 }
 
@@ -189,7 +193,6 @@ div.block {
 }
 #navigation-inner {
   background: transparent url(images/navigation.png) repeat-x scroll 0 0;
-  margin: 0 20px;
   -moz-border-radius-topleft: 25px;
   -webkit-border-top-left-radius: 25px;
   border-top-left-radius: 25px;
