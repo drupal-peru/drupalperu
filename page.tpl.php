@@ -94,7 +94,9 @@
 
       <?php print $messages ?>
 
-      <div class="tabs"><?php print $tabs; ?></div>
+      <?php if ($tabs): ?>
+        <div class="tabs"><?php print $tabs; ?></div>
+      <?php endif; ?>
 
       <?php print $content; ?>
 
