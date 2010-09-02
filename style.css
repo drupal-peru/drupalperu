@@ -1,6 +1,7 @@
 body {
   background-color: #FFF;
   margin:0;
+  font-family: "Bitstream Vera Sans", Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 
 /**
@@ -16,7 +17,6 @@ body {
   padding: 0px;
   padding: 7px 0 0 0;
   */
-  font-family: Verdana, Geneva, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
   /* Use a 12px base font size with a 16px line height */
   font-size: 0.75em; /* 16px x .75 = 12px */
   line-height: 1.333em; /* 12px x 1.333 = 16px */
@@ -229,7 +229,6 @@ div.block {
   background-color: #efefef;
   color: #999;
   font-size: 0.9em;
-  font-family: Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
   line-height: 5em;
   margin: 0;
   padding: 20px 0 0 0;
@@ -254,7 +253,6 @@ div.block {
   background: transparent url(images/navigation-shadow.png) no-repeat scroll 0 0;
   padding-top: 15px;
   height: 21px;
-  font-family: "Century Gothic", Helvetica, "Bitstream Vera Sans", sans-serif;
 }
 #navigation-inner {
   background: transparent url(images/navigation.png) repeat-x scroll 0 0;
@@ -300,7 +298,6 @@ ul.primary-links {
 
 #site-name a {
   display: block;
-  font-family: "Century Gothic", Helvetica, "Bitstream Vera Sans", sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
@@ -329,7 +326,6 @@ h1.title {
 }
 
 h1, h2, h3 {
-  font-family: "Century Gothic", Helvetica, "Bitstream Vera Sans", sans-serif;
 }
 
 #slogan {
@@ -383,7 +379,6 @@ div.tabs {
  */
 
 #sidebar-left .block h2 {
-  font-family: "Century Gothic", Helvetica, "Bitstream Vera Sans", sans-serif;
   margin: 5px 0 15px 0;
   text-transform: uppercase;
   font-size: 1.2em;
@@ -402,7 +397,6 @@ div.tabs {
   background: url(images/bullet.png) no-repeat 0 0.4em;
   padding: 0 0 .2em 1.5em;
   font-weight: bold;
-  font-family: Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
 }
 
 #main-content .content ul li a {
