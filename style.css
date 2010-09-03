@@ -58,6 +58,9 @@ input.form-text {
 /**
  * Override drupal system.css
  */
+.item-list {
+  margin-top: 12px;
+}
 
 .item-list ul li {
   list-style-type: none;
@@ -328,6 +331,7 @@ h1.title {
 }
 
 h1, h2, h3 {
+  margin: 0;
 }
 
 #slogan {
@@ -635,10 +639,10 @@ tfoot th em {
  */
 
 .frontpage-portadab-item {
-  width: 280px;
+  width: 286px;
 }
 .frontpage-portadab-inner {
-  padding: 10px;
+  padding: 0 10px 10px;
 }
 .view-frontpage.view-id-frontpage.view-display-id-block_1.view-dom-id-2 h2.title {
   font-size: 2em;
@@ -656,3 +660,26 @@ tfoot th em {
   border-bottom:2px dotted #bdbdbd;
   padding-bottom:26px;
 }  
+
+.short-news-container {
+  background: url(images/short-news-background.png) repeat-y;
+  margin-top: 30px;
+  min-height: 290px;
+}
+
+
+.short-news-container h2 {
+  margin-bottom: 10px;
+  line-height: 1.1em;
+}
+
+/* enlace ver más*/
+.link a{
+  background: #A94700;
+  padding: 3px 5px;
+  color: white;
+}
+
+.link a:hover {
+  background: #2e6cac;
+}
