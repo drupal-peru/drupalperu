@@ -116,7 +116,7 @@ ul.links {
 }
 
 .no-sidebars #main-content {
-  width: 840px;
+  width: 860px;
 }
 
 #main {
@@ -232,7 +232,7 @@ div.block {
   line-height: 5em;
   margin: 0;
   padding: 20px 0 0 0;
-  background: url(images/footer-gradient.png) repeat-x;
+  background: url(images/footer-gradient.png) repeat-x #265a92;
   min-height: 290px;
 }
 
@@ -309,7 +309,7 @@ ul.primary-links {
 div#site-name a {
   font-size: 6em;
 }
-h1#site-name a {
+#site-name a {
   font-size: 3em;
   letter-spacing: -0.08em;
 }
@@ -645,4 +645,14 @@ tfoot th em {
   line-height: 1em;
   font-weight: bold;
   text-transform:uppercase;
+  padding-top: 6px;
 }
+
+.right img {
+  margin-left: 20px;
+}
+
+#content-top {
+  border-bottom:2px dotted #bdbdbd;
+  padding-bottom:26px;
+}  
