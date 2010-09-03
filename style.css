@@ -277,7 +277,7 @@ ul.primary-links {
   padding: 0 10px;
   border-right: 1px solid #FFF;
   font-weight: bold;
-  font-size: 0.8em;
+  font-size: 0.7em;
   text-transform: uppercase;
   text-decoration: none;
   color: #FFF;
@@ -286,7 +286,8 @@ ul.primary-links {
   text-decoration:underline;
 }
 #navigation a.active, #navigation a:active {
-  color: #000;
+  color: #183859;
+  text-decoration: none;
 }
 #navigation li.last a {
   border-right:none;
@@ -645,4 +646,3 @@ tfoot th em {
   font-weight: bold;
   text-transform:uppercase;
 }
-
