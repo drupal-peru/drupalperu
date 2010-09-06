@@ -232,17 +232,75 @@ div.block {
   background-color: #efefef;
   color: #999;
   font-size: 0.9em;
-  line-height: 5em;
   margin: 0;
   padding: 20px 0 0 0;
   background: url(images/footer-gradient.png) repeat-x #265a92;
   min-height: 290px;
 }
 
+#footer h3 {
+  text-align: left;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 43px 0 0 50px ;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  width: 865px;
+}
+
 #main-content .node {
   border-bottom: 1px solid #EFEFEF;
   margin: 0 0 20px;
   padding: 0 0 30px;
+}
+
+#footer-inner-container ul {
+  list-style: none;
+}
+
+#footer-inner-container li {
+  float: left;
+}
+
+#footer-inner-container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+
+#footer_message {
+  color: white;
+}
+
+#footer_message a {
+  color: white;
+}
+/* menu enlaces externos*/
+
+#external_links {
+}
+
+
+#external_links ul {
+  width: 507px; 
+  float: left;
+  text-align: left;
+  margin: 5px 0 60px 64px;
+}
+
+
+#external_links li {
+  float: left;
+  width: 158px;
+  display: block;
+  list-style: disc;
+  display:list-item;
+  color: white;
+  padding: 0;
+}
+#external_links a {
+  color: white;
 }
 
 

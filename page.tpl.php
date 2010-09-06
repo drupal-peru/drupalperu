@@ -112,8 +112,32 @@
 <!--/wrapper-->
   <?php if ($footer_message): ?>
     <div id="footer">
-      <?php print $footer_message ?><?php print $footer; ?>
-    </div>
+      <div id="footer-inner-container">
+        
+        <h3>Enlaces</h3> 
+        <div id="external_links">
+          <?php echo theme('links', menu_navigation_links('menu-enlaces-externos')); ?> 
+        </div>
+
+        <ul class="clear">
+            <?php $twitter = '<img src="' . $base_path . $directory . '/images/facebook-drop.png" />'; ?>
+            <?php $facebook = '<img src="' . $base_path . $directory . '/images/twitter-drop.png" />'; ?>
+            <?php $rss = '<img src="' . $base_path . $directory . '/images/rss-drop.png" /">'; ?>
+            <?php $drupal_logo = '<img src="' . $base_path . $directory . '/images/facebook-drop.png" />'; ?>
+
+           <li><?php echo l($facebook, 'http://www.facebook.com/DrupalPeru', array('html' => 'true')); ?></li>
+           <li><?php echo l($twitter, 'http://twitter.com/drupal_peru', array('html' => 'true')); ?></li>
+           <li><?php echo l($rss, 'http://localhost/drupal/drupalperu.org/rss.xml', array('html' => 'true')); ?></li>
+         </ul>
+      </div>
+      <div id="footer_message" class="clear">
+        <?php print $footer_message ?><?php print $footer; ?>
+
+      </div> 
+
+
+  </div>
+
   <?php endif; ?>
 
   <?php print $closure ?>
