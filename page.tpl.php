@@ -122,14 +122,14 @@
         <?php echo drupal_peru_menu_render('menu-enlaces-externos'); ?>                 
 
            <ul class="clear">
-            <?php $twitter = '<img src="' . $base_path . $directory . '/images/facebook-drop.png" />'; ?>
-            <?php $facebook = '<img src="' . $base_path . $directory . '/images/twitter-drop.png" />'; ?>
+            <?php $facebook = '<img src="' . $base_path . $directory . '/images/facebook-drop.png" />'; ?>
+            <?php $twitter = '<img src="' . $base_path . $directory . '/images/twitter-drop.png" />'; ?>
             <?php $rss = '<img src="' . $base_path . $directory . '/images/rss-drop.png" /">'; ?>
             <?php $drupal_logo = '<img src="' . $base_path . $directory . '/images/facebook-drop.png" />'; ?>
 
-           <li><?php echo l($facebook, 'http://www.facebook.com/DrupalPeru', array('html' => 'true')); ?></li>
-           <li><?php echo l($twitter, 'http://twitter.com/drupal_peru', array('html' => 'true')); ?></li>
-           <li><?php echo l($rss, 'http://localhost/drupal/drupalperu.org/rss.xml', array('html' => 'true')); ?></li>
+           <li><?php echo l($facebook, 'http://www.facebook.com/DrupalPeru', array('html' => 'true', 'attributes' => array ('title' => 'Drupal Perú en Facebook','target' => '_blank'))); ?></li>
+           <li><?php echo l($twitter, 'http://twitter.com/drupal_peru', array('html' => 'true', 'attributes' => array ('title' => 'Drupal Perú en Twitter','target' => '_blank'))); ?></li>
+           <li><?php echo l($rss, 'http://localhost/drupal/drupalperu.org/rss.xml', array('html' => 'true', 'attributes' => array ('title' => 'RSS'))); ?></li>
          </ul>
       </div>
       <div id="footer_message" class="clear">

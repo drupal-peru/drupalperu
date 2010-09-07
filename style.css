@@ -106,7 +106,7 @@ ul.links {
  */
 
 #sidebar-left {
-  width: 200px;
+  width: 160px;
   float: left;
   padding: 20px;
 }
@@ -116,7 +116,7 @@ ul.links {
   background-color: #fff;
   float: left;
   width: 620px;
-  margin: 20px 20px 0 20px;
+  margin: 20px;
 }
 
 .no-sidebars #main-content {
