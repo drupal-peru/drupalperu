@@ -6,6 +6,11 @@
   <?php print $head ?>
   <?php print $styles ?>
   <?php print $scripts ?>
+
+  <!--[if IE 7]>
+    <link rel="stylesheet" href="ie7.css" type="text/css" media="screen" charset="utf-8">
+  <![endif]-->
+  
 </head>
 
 <body class="<?php print $body_classes; ?>">
@@ -114,12 +119,9 @@
     <div id="footer">
       <div id="footer-inner-container">
         
-        <h3>Enlaces</h3> 
-        <div id="external_links">
-          <?php echo theme('links', menu_navigation_links('menu-enlaces-externos')); ?> 
-        </div>
+        <?php echo drupal_peru_menu_render('menu-enlaces-externos'); ?>                 
 
-        <ul class="clear">
+           <ul class="clear">
             <?php $twitter = '<img src="' . $base_path . $directory . '/images/facebook-drop.png" />'; ?>
             <?php $facebook = '<img src="' . $base_path . $directory . '/images/twitter-drop.png" />'; ?>
             <?php $rss = '<img src="' . $base_path . $directory . '/images/rss-drop.png" /">'; ?>

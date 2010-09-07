@@ -25,3 +25,15 @@ function drupal_peru_imagefield_image($file, $alt = '', $title = '', $attributes
   }
   return theme_imagefield_image($file, $alt, $title, $attributes, $getsize);
 }
+
+/**
+ * Muestra el título del menu e imprime un menu personalizado.
+ */
+
+function drupal_peru_menu_render($menuname){
+  $menu = menu_load($menuname);
+  $output = '<h3>' . $menu['title'] . '</h3>';
+  $output .= '<div id="external_links">' . theme('links', menu_navigation_links($menuname)) . '</div>';
+
+  return $output;
+}
