@@ -80,11 +80,11 @@
   </div><!--/header-->
 
   <div id="main">
-
+  <?php if (!$is_front): ?>
     <div id="sidebar-left">
       <?php print $left ; ?>
     </div>
-
+  <?php endif; ?>
     <div id="main-content">
 
       <?php if ($content_top): ?>

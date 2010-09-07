@@ -108,14 +108,15 @@ ul.links {
 #sidebar-left {
   width: 200px;
   float: left;
+  padding: 20px;
 }
 
 #main-content {
   color: #444;
   background-color: #fff;
   float: left;
-  width: 660px;
-  margin: 0 20px;
+  width: 620px;
+  margin: 20px 20px 0 20px;
 }
 
 .no-sidebars #main-content {
@@ -208,7 +209,6 @@ ul.links {
  */
 
 div.block {
-  margin-top: 15px;
 }
 
 #block-block-1 .title {
