@@ -379,8 +379,10 @@ h1#site-name {
 }
 
 h1.title {
-  font-size: 1.6em;
-  color: #272727;
+  font-size:2em;
+  line-height:1.2;
+  color:#A94700 ;
+  margin-bottom: 15px; 
 }
 
 #front h2 a {
@@ -505,6 +507,10 @@ input#edit-search-theme-form-keys {
 /**
  * Comments
  */
+
+#comments {
+  margin-bottom: 30px;
+}
 
 #commentblock {
   width: 450px;
