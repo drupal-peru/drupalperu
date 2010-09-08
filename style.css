@@ -707,6 +707,7 @@ tfoot th em {
 }
 .frontpage-portadab-inner {
   padding: 0 10px 10px;
+  position: relative;
 }
 .view-frontpage.view-id-frontpage.view-display-id-block_1.view-dom-id-2 h2.title {
   font-size: 2em;
@@ -728,7 +729,7 @@ tfoot th em {
 .short-news-container {
   background: url(images/short-news-background.png) repeat-y;
   margin-top: 30px;
-  min-height: 290px;
+  min-height: 148px;
 }
 
 
@@ -738,10 +739,19 @@ tfoot th em {
 }
 
 /* enlace ver más*/
-.link a{
+.frontpage-portadab-inner .link {
+  left:215px;
+  position:absolute;
+  top:130px;
+}
+ 
+
+
+.link a {
   background: #A94700;
   padding: 3px 5px;
   color: white;
+  left: 218px;
 }
 
 .link a:hover {
