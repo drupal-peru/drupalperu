@@ -757,3 +757,39 @@ tfoot th em {
 .link a:hover {
   background: #2e6cac;
 }
+
+/*-----------------------------------------------------------------------------
+ *           Materiales de aprendizaje            
+ *---------------------------------------------------------------------------*/
+.materials-item {
+  border: 1px solid #bdbdbd;
+  clear: both;
+  margin: 20px 0;
+}
+.materials-item h2 {
+  background: #265A92; 
+  min-width: 579px;
+  padding: 10px 20px;
+}
+
+.materials-item h2 a {
+  color: white;
+}
+
+.materials-item h2 a:hover {
+  color:#c5d5e5;
+}
+
+.description {
+  padding: 0 10px; 
+}
+
+.materials {
+  padding: 10px 10px;
+}
+
+.add-comment {
+  margin-top: 40px;
+  float: right;
+}
+ 
