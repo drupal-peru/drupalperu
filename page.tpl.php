@@ -6,9 +6,8 @@
   <?php print $head ?>
   <?php print $styles ?>
   <?php print $scripts ?>
-
-  <!--[if IE 7]>
-    <link rel="stylesheet" href="ie7.css" type="text/css" media="screen" charset="utf-8">
+    <!--[if IE 7]>    
+    	<link type="text/css" rel="stylesheet" media="all" href="<?php echo base_path().path_to_theme(); ?>/ie7.css" />
   <![endif]-->
   
 </head>

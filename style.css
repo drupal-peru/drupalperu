@@ -717,13 +717,16 @@ tfoot th em {
   padding-top: 6px;
 }
 
+#block-views-frontpage-block_1{
+  margin-bottom: 25px;
+}
 .right img {
   margin-left: 20px;
 }
 
 #content-top {
   border-bottom:2px dotted #bdbdbd;
-  padding-bottom:26px;
+  padding-bottom:10px;
 }  
 
 .short-news-container {
@@ -793,3 +796,7 @@ tfoot th em {
   float: right;
 }
  
+.field-item {
+  float: left;
+  padding-right: 9px;
+}
