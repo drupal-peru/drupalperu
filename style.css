@@ -773,6 +773,7 @@ tfoot th em {
   background: #265A92; 
   min-width: 579px;
   padding: 10px 20px;
+  line-height:1.2;
 }
 
 .materials-item h2 a {
@@ -782,6 +783,12 @@ tfoot th em {
 .materials-item h2 a:hover {
   color:#c5d5e5;
 }
+
+.materials-item h3 {
+  padding:10px 20px 0 10px;
+  font-size: 1em;
+}
+
 
 .description {
   padding: 0 10px; 
@@ -799,4 +806,108 @@ tfoot th em {
 .field-item {
   float: left;
   padding-right: 9px;
+}
+
+.frontpage-block-header {
+  background: url(images/frontpage-header-background.jpg) repeat-x #265A92;
+  font-size: 1.88em;
+  color:white;
+  margin: 25px -20px 20px -20px;
+  padding: 10px 0 10px 20px;
+}
+
+/*-----------------------------------------------------------------------------
+ *           calendar             
+ *---------------------------------------------------------------------------*/
+
+.view-display-id-calendar_block_1 {
+  width: 477px;
+  float: left;
+}
+
+.calendar-calendar .mini-day-off {
+  padding: 3px 2px;
+}
+
+.mini-day-on {
+  margin-top: 3px;
+}
+
+
+#calendar-frontpage table a {
+   width: 21px;
+  height: 24px;
+  display: block;
+  margin-left: 36px;
+  padding: 4px 0 0 0;
+
+} 
+
+table .mini-day-on a {
+  font-weight: bold !important; 
+  background:url("images/drop-date.png") no-repeat ;
+  color:white;
+  text-decoration:none;
+  text-align: center;
+}
+
+table .mini-day-on a:hover {
+  color: #dd471f;
+  text-decoration:none;
+}
+
+.calendar-calendar tr {
+  border: 1px solid #666;
+}
+
+
+.calendar-calendar td {
+  border: 1px solid #c7c7c7 !important;
+}
+
+.calendar-calendar div.date-nav {
+  background: none;
+  padding: 10px 5px;
+}
+
+.calendar-calendar th.days {
+  background: #dfe7ef ; 
+} 
+
+.calendar-calendar td.calendar-agenda-hour {
+  font-family: "Bitstream Vera Sans", Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+} 
+
+/*-----------------------------------------------------------------------------
+ *           events frontpage            
+ *---------------------------------------------------------------------------*/
+
+#events-front-page {
+  float: right;
+  position: static;
+  width: 355px;
+}
+
+
+.events-list {
+  margin: 10px 0;
+}
+
+.events-list h2 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+.date {
+  float: left;
+  padding-right: 5px;
+}
+
+.location, .date {
+  color: #dd471f; 
+  font-size: 0.94em;
+  font-weight: bold;
+  margin: 5px 0;
+
 }

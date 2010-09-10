@@ -1,0 +1,16 @@
+body {
+  color: pink;
+}
+
+#site-name a {
+  font-size: 65px;
+  line-height: -1px;
+}
+ 
+.frontpage-portadab-inner .link {
+  top: 160px;
+} 
+
+#footer h3 {
+  margin-left: 35px;
+} 
