@@ -14,3 +14,8 @@ body {
 #footer h3 {
   margin-left: 35px;
 } 
+
+.frontpage-block-header {
+padding-left: 50px;
+width: 849px;
+}
