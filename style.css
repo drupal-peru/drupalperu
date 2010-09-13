@@ -871,13 +871,24 @@ table .mini-day-on a:hover {
 }
 
 .calendar-calendar th.days {
-  background: #dfe7ef ; 
+  background: #468CBC; 
+  color: white;
 } 
 
 .calendar-calendar td.calendar-agenda-hour {
   font-family: "Bitstream Vera Sans", Verdana, Geneva, Arial, Helvetica, sans-serif;
   font-size: 0.8em;
 } 
+
+/*efecto de sombra en el calendario*/
+.calendar-calendar tr td:hover {
+ -moz-box-shadow: 0px 0px 10px #8c8c8c ; 
+-webkit-box-shadow: 0px 0px 10px #8c8c8c ;
+          box-shadow: 0px 0px 10px #8c8c8c ;
+}
+.calendar-calendar tr td.empty:hover {
+ -moz-box-shadow: none;
+}
 
 /*-----------------------------------------------------------------------------
  *           events frontpage            
@@ -911,3 +922,5 @@ table .mini-day-on a:hover {
   margin: 5px 0;
 
 }
+
+
